@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="diary_entry.css">
+    <title>Diary Entry</title>
+
+
+</head>
+
+
+     <header>
+        <main class="group">
+            <nav>
+              
+                <ul>
+                    <a href="login.php"></a>
+                    <a href="index.php"><li>Kyle's Profile</li></a>
+                    <a href="index2.php"><li>Miles's Profile</li></a>                         
+                </ul>
+            </nav>
+            <main class="nav-bottom">
+                <main class="nav-bot-con"></main>
+            </main>
+          </header>
+
+          <body>
+<body>
+     
+    <h1>Diary Entry</h1>
+        <form action="process_form.php" method="post">
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic" required><br><br>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Home">Home</option>
+                <option value="Personal">Personal</option>
+                <option value="School">School</option>
+                <option value="Peers">Peers</option>
+                <option value="Others">Others</option>
+            </select><br><br>
+
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <input type="submit" value="Submit">
+
+            
+        </form>
+
+      
+    </div>
+
+</body>
+
+</html>

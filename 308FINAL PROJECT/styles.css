@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap');
+
+*{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+ 
+
+nav{
+    display: flex;
+    padding: 0.2em;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    align-items: center;
+        justify-content: space-around;
+    border: 3px solid;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);}
+
+
+nav ul{
+    display: flex;
+
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+nav ul a li {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    list-style: none;
+    margin-right: 3em;
+    text-align: center;
+
+
+}
+nav ul a li :nth-last-child(1){
+    margin: 0;
+
+}
+.nav-bottom{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.nav-bot-con{
+    position: relative;
+    z-index: -1;
+    width: 94vw;
+    padding: .9em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    justify-content: center;
+    border: 1px solid;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0);
+
+}
+
+
+nav ul a li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 25px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0); 
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease; 
+}
+
+nav ul a li:hover{
+    cursor: pointer;
+}
+
+
+
+nav ul a li:hover::after {
+    transform: scaleX(1);
+
+
+}
